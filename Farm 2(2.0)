@@ -66,7 +66,7 @@ for _, player in ipairs(players:GetPlayers()) do
         
         game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
             if State == Enum.TeleportState.Started then
-                queue_on_teleport("<script to execute after TP>")
+                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/C1lone/public/main/Farm%202(2.0)'))()")
             end
         end)
     end
@@ -79,7 +79,7 @@ players.PlayerAdded:Connect(function(player)
         
         game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
             if State == Enum.TeleportState.Started then
-                queue_on_teleport("<script to execute after TP>")
+                queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/C1lone/public/main/Farm%202(2.0)'))()")
             end
         end)
     end
