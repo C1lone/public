@@ -262,7 +262,7 @@ getgenv().connection = local_player.CharacterAdded:Connect(function(character)
                             repeat
                                 task.wait()
 
-                                if tick() - timer > 0.75 and cash:FindFirstChild('ClickDetector') then
+                                if tick() - timer > 0.6 and cash:FindFirstChild('ClickDetector') then
                                     --# Pickup After 0.8 Seconds
                                     fireclickdetector(cash.ClickDetector)
                                 end
