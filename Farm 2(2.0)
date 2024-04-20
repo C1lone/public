@@ -199,7 +199,7 @@ getgenv().connection = local_player.CharacterAdded:Connect(function(character)
                         repeat
                             task.wait()
 
-                            spin_value += 9
+                            spin_value += 2
                             local_player.Character.HumanoidRootPart.CFrame = register.Open.CFrame * CFrame.Angles(0, math.rad(spin_value), 0)
                             local_player.Character.HumanoidRootPart.Velocity = Vector3.new(0, 0, 0)
                         until tick() - timer > 1 or register_health ~= register.Humanoid.Health or getgenv().farm == false
