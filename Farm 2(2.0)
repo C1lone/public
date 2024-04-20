@@ -200,7 +200,7 @@ getgenv().connection = local_player.CharacterAdded:Connect(function(character)
                             task.wait()
 
                             spin_value += 6
-                            local_player.Character.HumanoidRootPart.CFrame = register.Open.CFrame * CFrame.Angles(0, math.rad(spin_value), 0) * CFrame.new(0, 0, 5)
+                            local_player.Character.HumanoidRootPart.CFrame = register.Open.CFrame * CFrame.Angles(0, math.rad(spin_value), 0)
                             local_player.Character.HumanoidRootPart.Velocity = Vector3.new(0, 0, 0)
                         until tick() - timer > 1 or register_health ~= register.Humanoid.Health or getgenv().farm == false
                     else
@@ -240,7 +240,7 @@ getgenv().connection = local_player.CharacterAdded:Connect(function(character)
                             repeat
                                 task.wait()
 
-                                if tick() - timer > 0.25 and cash:FindFirstChild('ClickDetector') then
+                                if tick() - timer > 0.6 and cash:FindFirstChild('ClickDetector') then
                                     --# Pickup After 0.8 Seconds
                                     fireclickdetector(cash.ClickDetector)
                                 end
@@ -262,7 +262,7 @@ getgenv().connection = local_player.CharacterAdded:Connect(function(character)
                             repeat
                                 task.wait()
 
-                                if tick() - timer > 0.25 and cash:FindFirstChild('ClickDetector') then
+                                if tick() - timer > 0.6 and cash:FindFirstChild('ClickDetector') then
                                     --# Pickup After 0.8 Seconds
                                     fireclickdetector(cash.ClickDetector)
                                 end
