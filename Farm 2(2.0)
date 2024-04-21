@@ -85,7 +85,7 @@ players.PlayerAdded:Connect(function(player)
     end
 end)
 --# Load Gui
--- nick hur loadstring(game:HttpGet('https://raw.githubusercontent.com/polarsblade/source/main/utilities/autofarm_ui'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/polarsblade/source/main/utilities/autofarm_ui'))()
 
 --# Reset Player
 local_player.Character.HumanoidRootPart.CFrame = CFrame.new(0, -498, 0)
@@ -175,6 +175,8 @@ getgenv().connection = local_player.CharacterAdded:Connect(function(character)
 
         --# Begin Farming
         repeat
+            task.wait()
+
             local register = nil
             for _, atm in ipairs(workspace.Cashiers:GetChildren()) do
                 if atm.Humanoid.Health > 0 then
