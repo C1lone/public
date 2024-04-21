@@ -85,7 +85,7 @@ players.PlayerAdded:Connect(function(player)
     end
 end)
 --# Load Gui
-loadstring(game:HttpGet('https://raw.githubusercontent.com/polarsblade/source/main/utilities/autofarm_ui'))()
+-- nick hur loadstring(game:HttpGet('https://raw.githubusercontent.com/polarsblade/source/main/utilities/autofarm_ui'))() 
 
 --# Reset Player
 local_player.Character.HumanoidRootPart.CFrame = CFrame.new(0, -498, 0)
